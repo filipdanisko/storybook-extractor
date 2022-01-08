@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "outDir": "./build",
+    "rootDir": ".",
+    "strict": true,
+    "removeComments": true,
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
