@@ -1,13 +1,13 @@
-#!/usr/bin/node
-import { extract } from './extract';
-import path from 'path';
-import sade from 'sade';
-import * as packageJson from '../package.json';
+#!/usr/bin/env node
+import { extract } from "./extract";
+import path from "path";
+import sade from "sade";
+import * as packageJson from "../package.json";
 
-sade('storybook-extractor', true)
+sade("storybook-extractor", true)
   .version(packageJson.version)
   .describe(packageJson.description)
-  .option('-c, --config', 'Path to config file')
+  .option("-c, --config", "Path to config file")
   .action(async (options) => {
     const configPath = path.resolve(process.cwd(), options.config);
     const config = await import(configPath);

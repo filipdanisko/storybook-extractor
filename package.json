@@ -1,13 +1,16 @@
 {
   "name": "storybook-extractor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Metadata extractor for storybook",
   "main": "./src/index.js",
-  "bin": "./src/index.js",
   "author": "filipdanisko",
   "license": "MIT",
   "engines": {
     "node": ">= 16.0 <17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filipdanisko/storybook-extractor.git"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
